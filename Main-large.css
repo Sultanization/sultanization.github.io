@@ -1,0 +1,224 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+p {
+	font-family: "Roboto Condensed";
+	line-height: 1.5;
+}
+p::selected {
+	background: darkcyan;
+	color: black;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	/*
+	background: url(https://www.rtor.org/wp-content/uploads/2017/06/iStock-532969250.jpg) no-repeat;
+	*/
+	background: url(C:/Users/ersul/Downloads/maket-2-header-bg-dark.jpg) no-repeat;
+	background-size: 100%;
+}
+header .header-menu {
+	width: 100%;
+	height: 15%;
+}
+header img {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	cursor: pointer;
+}
+
+/*work with menu list in the right part of the header */
+header ul {
+	margin: 0;
+	padding: 25px;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	list-style: none; 
+}
+header ul li a {
+	padding: 30px 25px 15px 30px;
+	color: orange;
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-family: Roboto, Oswald;
+	transition: .5s;
+}
+header ul li a:hover {
+	color: #fff;
+	transition: .5s;
+}
+
+/*work with main quote in header*/
+header .header-main-quote {
+	width: 100%;
+	height: 85%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header .header-main-quote h1 {
+	color: #fff;
+	font-size: 3rem;
+	position: relative;
+	bottom: 10%;
+	font-family: "Roboto Condensed", "PT Serif", "PT Sans Narrow", Oswald, "Open Sans"; 
+	letter-spacing: 1.5px;
+}
+
+
+/*wrapper part*/
+.wrapper {
+	width: 100%;
+	height: 300px;
+}
+.secondary-quote {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*work with NAN's quote*/
+.secondary-quote blockquote {
+	width: 800px;
+	font-size: 1rem;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+	font-family: "PT Serif";
+}
+.secondary-quote blockquote:before, 
+.secondary-quote blockquote:after {
+	content: " * ";
+	padding: 5px;
+}
+
+/*the div full of categoreies abour i dont know yet...*/
+.main-categories {
+	width: 100%;
+	padding: 15px;	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: row;
+	margin-bottom: 150px;
+}
+.category-line {
+	flex-basis: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 15px 0;
+	position: relative;
+	left: 3%;
+}
+.category-line .sub-category {
+	width: 33.33%;
+	height: 100%;
+	padding: 10px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.category-line .sub-category img {
+	position: relative;
+	left: 30%;
+	padding-bottom: 15px; 
+}
+.category-line .sub-category h3 {
+	font-weight: 550;
+	font-family: "PT Serif";
+}
+.category-line .sub-category h3, p {
+	width: 80%;
+}
+/*ховер эффект для иконок 6 котейнеров*/
+.sub-category img {
+	transition: .5s;
+}
+.sub-category img:hover {
+	transform: scale(1.2);
+	transition: .5s;
+}
+
+
+/*footer part */
+footer {
+	width: 100%;
+	height: 350px;
+	background: #282F49;
+	display: flex;
+}
+footer .social-address {
+	width: 25%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background: #353D5B;
+}
+.social-address .address {
+	width: 100%;
+	height: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.social-address .address address {
+	width: 70%;
+	line-height: 1.5;
+	color: #fff;
+	font-family: "PT Sans";
+}
+footer .social-network-signs p {
+	color: #fff;
+	text-align: center;
+	font-family: "Roboto Condensed";
+}
+footer ul {
+	display: flex;
+	list-style: none;
+}
+footer ul li {
+	margin-left: 15px;
+	cursor: pointer;
+	transition: .5s;
+}
+footer ul li:hover {
+	transform: scale(1.1);
+	transition: .5s;
+}
+footer ul li img {
+	width: 35px;
+	height: 35px;
+}
+/*footer main part where main footer text is located knda JRO and etc*/
+footer .footer-main-part {
+	width: 75%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+footer .footer-main-part p {
+	color: #fff;
+	font-family: "PT Sans";
+	text-align: center;
+	line-height: 1.5;
+	letter-spacing: 1.2px;
+}
