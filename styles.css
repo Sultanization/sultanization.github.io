@@ -28,7 +28,7 @@ header {
 	/*
 	background: url(https://www.rtor.org/wp-content/uploads/2017/06/iStock-532969250.jpg) no-repeat;
 	*/
-	background: url(maket-2-header-bg-dark.jpg) no-repeat;
+	background: url(C:/Users/ersul/Downloads/maket-2-header-bg-dark.jpg) no-repeat;
 	background-size: 100%;
 }
 header .header-menu {
@@ -154,6 +154,93 @@ header .header-main-quote h1 {
 .sub-category img:hover {
 	transform: scale(1.2);
 	transition: .5s;
+}
+
+
+
+/* ASK QUESTION PART, BITCHES */
+.ask-question-container {
+	width: 100%;
+	margin-bottom: 150px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.ask-question-container header {
+	width: 100%;
+	height: 10%;
+	background: transparent;
+}
+.ask-question-container header h1 {
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+	font-family: "PT Sans";
+	font-weight: lighter;
+}
+.ask-question-container .two-cards-container {
+	width: 100%;
+	height: 90%;
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.ask-card {
+	width: 600px;
+	height: 350px;
+	margin: 35px;
+	background: #979ADE;
+	box-shadow: 0 0 15px grey;
+	border-radius: 25px;
+	display: flex;
+	cursor: pointer;
+	transition: .5s;
+}
+.ask-card:hover {
+	box-shadow: 0 0 15px black;
+	transition: .5s;
+}
+.ask-card .ask-card-img {
+	width: 40%;
+	height: 100%;
+	background: #fff;
+	border-radius: 25px 0 0 25px;
+	overflow: hidden;
+}
+.ask-card .ask-card-img img {
+	width: 100%;
+	height: 100%;
+	border-radius: 25px 0 0 25px;
+}
+.ask-card .ask-card-bio {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+}
+.ask-card .ask-card-bio h1 {
+	text-transform: uppercase;
+	font-family: Impact;
+	letter-spacing: 3px;
+}
+.ask-card .ask-card-bio input {
+	padding: 15px 10px;
+	background: #fff;
+	color: #979ADE;
+	border-radius: 10px;
+	font-family: Roboto;
+	outline: none;
+	cursor: pointer;
+	border-style: none;
+	font-weight: bold;
+	box-shadow: 0 0 35px grey;
+
 }
 
 
