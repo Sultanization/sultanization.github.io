@@ -118,11 +118,19 @@
 			footer .social-address {
 				width: 100%;
 			}
+			footer .to-top img {
+				position: relative;
+				bottom: 15px;
+			}
 		}
 	</style>
 </head>
 <body>
-	<header>
+	<!-- PRELOADER -->
+	<div id="preloader"> </div>
+
+	<!-- HEADER -->
+	<header id="main-header">
 		<div class="header-menu">
 			<ul>
 				<li><a href="#">Басты</a></li>
@@ -137,6 +145,7 @@
 		</div>
 	</header>
 
+	<!-- WRAPPER -->
 	<div class="wrapper" id="wrapper">
 		<div class="secondary-quote wow fadeInUp">
 			<blockquote align="center">
@@ -218,7 +227,7 @@
 
 				<div class="ask-card">
 					<div class="ask-card-img">
-						<img src="Stephen2.jpg" loading="lazy">
+						<img src="EDEN-2.jpg" loading="lazy">
 					</div>
 					<div class="ask-card-bio">
 						<h1>Stephen</h1>
@@ -254,13 +263,35 @@
 		</div>
 		<div class="footer-main-part" id="footer">
 			<p>
-				Жастар ресуртысқ орталығы, 2018ж.
+				<a href="#main-header">Жастар ресуртысқ орталығы, 2018ж.</a>
 				<br>
 				Барлық құқық заңды түрде қорғалған. Материалдарды пайдалану, міндетті түрде сілтеме арқылы жасалуы қажет.
 			</p>
+			<div class="to-top">
+				<a href="#main-header">
+					<img src="D:\Everything\Web\Web Images\Icons\to-top.svg">
+				</a>
+			</div>
 		</div>
 	</footer>
 	</div>
+
+
+	<!-- JS -->
+	<script>
+		const preloader = document.getElementById('preloader');
+		const header = document.getElementById('main-header');
+		const wrapper = document.getElementById('wrapper');
+		// const page = document.getElementById('main-header');
+
+		if(document.readyState) {
+			setTimeout(() => {
+				preloader.style.display = 'none';
+				header.style.display = 'block';
+				wrapper.style.display = 'block';
+			}, 2000);
+		}
+	</script>
 
 </body>
 </html>
