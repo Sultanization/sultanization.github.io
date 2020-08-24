@@ -22,14 +22,6 @@ p::selected {
 	color: black;
 }
 
-/* prealoader */
-#preloader {
-	width: 100%;
-	height: 100vh;
-	display: inline-block;
-	background: url(cube.gif") no-repeat center;
-}
-
 header {
 	width: 100%;
 	height: 100vh;
