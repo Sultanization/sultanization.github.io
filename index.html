@@ -126,9 +126,6 @@
 	</style>
 </head>
 <body>
-	<!-- PRELOADER -->
-	<div id="preloader"> </div>
-
 	<!-- HEADER -->
 	<header id="main-header">
 		<div class="header-menu">
@@ -275,23 +272,5 @@
 		</div>
 	</footer>
 	</div>
-
-
-	<!-- JS -->
-	<script>
-		const preloader = document.getElementById('preloader');
-		const header = document.getElementById('main-header');
-		const wrapper = document.getElementById('wrapper');
-		// const page = document.getElementById('main-header');
-
-		if(document.readyState) {
-			setTimeout(() => {
-				preloader.style.display = 'none';
-				header.style.display = 'block';
-				wrapper.style.display = 'block';
-			}, 2000);
-		}
-	</script>
-
 </body>
 </html>
