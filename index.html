@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	
-	<meta rel="icon" href="https://rb.gy/qnp8ml">
+
+	<!-- icon -->
+	<meta rel='icon' href="whatsapp.png">
 
 	<!-- enabling viewprt -->
 	<meta name="viewport" content="width=device-width">
@@ -13,6 +14,13 @@
 
 	<!-- connecting css -->
 	<link rel="stylesheet" href="styles.css">
+
+	<!-- jquery -->
+	<script
+		src="https://code.jquery.com/jquery-3.5.1.js"
+		integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+		crossorigin="anonymous">
+	</script>
 
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Oswald|PT+Sans|PT+Sans+Narrow|PT+Serif|Roboto|Roboto+Condensed" rel="stylesheet">
@@ -128,6 +136,9 @@
 	</style>
 </head>
 <body>
+	<!-- PRELOADER -->
+	<div id="preloader"></div>
+
 	<!-- HEADER -->
 	<header id="main-header">
 		<div class="header-menu">
@@ -240,7 +251,7 @@
 			</div>	
 		</div>
 	
-	<footer>
+	<footer class="footer">
 		<div class="social-address">
 			<div class="address">
 				<address>
@@ -268,11 +279,25 @@
 			</p>
 			<div class="to-top">
 				<a href="#main-header">
-					<img src="to-top.svg">
+					<img src="D:\Everything\Web\Web Images\Icons\to-top.svg">
 				</a>
 			</div>
 		</div>
 	</footer>
 	</div>
+
+
+	<!-- JS -->
+	<script>
+		if($(document).ready()){
+			setTimeout(() => {
+				$('#preloader').toggle('slow');
+				$('header').toggle('slow');
+				$('.wrapper').toggle('slow');
+				$('.footer').toggle('slow');
+			}, 2000)
+		}
+	</script>
+
 </body>
 </html>

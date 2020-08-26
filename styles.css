@@ -22,11 +22,20 @@ p::selected {
 	color: black;
 }
 
+/* prealoader */
+#preloader {
+	width: 100%;
+	height: 100vh;
+	display: inline-block;
+	background: url("D:/Everything/Web/Web Images/gifs/cube.gif") no-repeat center;
+}
+
 header {
 	width: 100%;
 	height: 100vh;
 	background: url(maket-2-header-bg-dark.jpg) no-repeat;
 	background-size: 100%;
+	display: none;
 
 }
 header .header-menu {
@@ -86,6 +95,7 @@ header .header-main-quote h1 {
 .wrapper {
 	width: 100%;
 	height: 300px;
+	display: none;
 }
 .secondary-quote {
 	width: 100%;
@@ -247,6 +257,9 @@ header .header-main-quote h1 {
 
 
 /*footer part */
+.footer {
+	display: none;
+}
 footer {
 	width: 100%;
 	height: 350px;
