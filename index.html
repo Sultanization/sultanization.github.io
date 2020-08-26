@@ -45,9 +45,6 @@
 				background-size: cover;
 				background-position: center;
 			}
-			header img {
-				/*display: none;*/
-			}
 			header .header-main-quote > h1 {
 				font-size: 1.5em;
 				text-align: center;
@@ -62,7 +59,6 @@
 			}
 			header ul li a {
 				font-size: .7em;
-				color: gold;
 				padding: 10px;
 				text-decoration: none;
 			}
@@ -279,7 +275,7 @@
 			</p>
 			<div class="to-top">
 				<a href="#main-header">
-					<img src="D:\Everything\Web\Web Images\Icons\to-top.svg">
+					<img src="to-top.svg">
 				</a>
 			</div>
 		</div>
@@ -291,7 +287,7 @@
 	<script>
 		if($(document).ready()){
 			setTimeout(() => {
-				$('#preloader').toggle('slow');
+				$('#preloader').fadeOut('slow');
 				$('header').toggle('slow');
 				$('.wrapper').toggle('slow');
 				$('.footer').toggle('slow');

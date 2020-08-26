@@ -27,7 +27,7 @@ p::selected {
 	width: 100%;
 	height: 100vh;
 	display: inline-block;
-	background: url("cube.gif") no-repeat center;
+	background: url("D:/Everything/Web/Web Images/gifs/cube.gif") no-repeat center;
 }
 
 header {
@@ -36,7 +36,7 @@ header {
 	background: url(maket-2-header-bg-dark.jpg) no-repeat;
 	background-size: 100%;
 	display: none;
-
+	/*transition: 0.5s;*/
 }
 header .header-menu {
 	width: 100%;
@@ -56,20 +56,20 @@ header ul {
 	margin: 0;
 	padding: 25px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	flex-wrap: wrap;
 	list-style: none; 
 }
 header ul li a {
 	padding: 30px 25px 15px 30px;
-	color: orange;
+	/*color: orange;*/
 	font-size: 1rem;
 	text-transform: uppercase;
 	font-family: Roboto, Oswald;
 	transition: .5s;
 }
 header ul li a:hover {
-	color: #fff;
+	color: orange;
 	transition: .5s;
 }
 
@@ -96,6 +96,7 @@ header .header-main-quote h1 {
 	width: 100%;
 	height: 300px;
 	display: none;
+	justify-content: center;
 }
 .secondary-quote {
 	width: 100%;
@@ -121,7 +122,7 @@ header .header-main-quote h1 {
 /*the div full of categoreies abour i dont know yet...*/
 .main-categories {
 	width: 100%;
-	padding: 15px;	
+	/*padding: 15px;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
