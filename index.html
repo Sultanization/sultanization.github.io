@@ -69,6 +69,7 @@
 				padding: 0;
 			}
 			.main-categories {
+				width: 100%;
 				display: flex;
 				flex-direction: column;
 				flex-wrap: wrap;
@@ -112,17 +113,24 @@
 			footer {
 				display: flex;
 				flex-direction: column;
-				flex-wrap: nowrap;
+				/*flex-wrap: nowrap;*/
 				justify-content: center;
 				align-items: center;
 				margin: 0;
 				padding:0;
-				height: 300px;
+				height: auto;
 				background: #282F49;
 				text-align: center;
 			}
 			footer .social-address {
 				width: 100%;
+				display: flex;
+			}
+			footer. .social-network-signs {
+				border: solid 1px red;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 			footer .to-top img {
 				position: relative;
@@ -294,7 +302,7 @@
 	<script>
 		if($(document).ready()){
 			setTimeout(() => {
-				$('#preloader').fadeOut('slow');
+				$('#preloader').toggle('slow');
 				$('header').toggle('slow');
 				$('.wrapper').toggle('slow');
 				$('.footer').toggle('slow');
