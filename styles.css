@@ -63,6 +63,7 @@ header ul {
 header ul li a {
 	padding: 30px 25px 15px 30px;
 	color: orange;
+	font-weight: bold;
 	font-size: 1rem;
 	text-transform: uppercase;
 	font-family: Roboto, Oswald;
