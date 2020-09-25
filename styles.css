@@ -82,7 +82,7 @@ header .header-main-quote {
 	align-items: center;
 }
 header .header-main-quote h1 {
-	color: #fff;
+	color: orange;
 	font-size: 3rem;
 	position: relative;
 	bottom: 10%;
