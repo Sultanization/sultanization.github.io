@@ -62,16 +62,16 @@ header ul {
 }
 header ul li a {
 	padding: 30px 25px 15px 30px;
-	/*color: orange;*/
+	color: orange;
 	font-size: 1rem;
 	text-transform: uppercase;
 	font-family: Roboto, Oswald;
 	transition: .5s;
 }
-header ul li a:hover {
+/*header ul li a:hover {
 	color: orange;
 	transition: .5s;
-}
+}*/
 
 /*work with main quote in header*/
 header .header-main-quote {
